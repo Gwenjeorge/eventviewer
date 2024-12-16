@@ -1,0 +1,7 @@
+<QueryList>
+  <Query Id="0" Path="DNS Server">
+    <Select Path="DNS Server">*[System[Provider[@Name='Microsoft-Windows-DNSServer' or @Name='Microsoft-Windows-DNS-Server-Service'] and (Level=1  or Level=2 or Level=3 or Level=4 or Level=0) and (EventID=2 or EventID=4 or EventID=409 or EventID=501 or EventID=502 or EventID=6001 or EventID=6002)]]</Select>
+    <Select Path="Microsoft-Windows-DNSServer/Analytical">*[System[Provider[@Name='Microsoft-Windows-DNSServer' or @Name='Microsoft-Windows-DNS-Server-Service'] and (Level=1  or Level=2 or Level=3 or Level=4 or Level=0) and (EventID=2 or EventID=4 or EventID=409 or EventID=501 or EventID=502 or EventID=6001 or EventID=6002)]]</Select>
+    <Select Path="Microsoft-Windows-DNSServer/Audit">*[System[Provider[@Name='Microsoft-Windows-DNSServer' or @Name='Microsoft-Windows-DNS-Server-Service'] and (Level=1  or Level=2 or Level=3 or Level=4 or Level=0) and (EventID=2 or EventID=4 or EventID=409 or EventID=501 or EventID=502 or EventID=6001 or EventID=6002)]]</Select>
+  </Query>
+</QueryList>
